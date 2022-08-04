@@ -37,7 +37,6 @@ function displayResult(argPlayerMove, argComputerMove) {
 }
 
 
-var argButtonName, buttonPaper, buttonRock, buttonScissors;
 
 /**
  * Describe this function...
@@ -59,9 +58,9 @@ function buttonClicked(argButtonName) {
 
 
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function () { buttonClicked('kamień'); });
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function () { buttonClicked('papier'); });
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function () { buttonClicked('nożyce'); });
